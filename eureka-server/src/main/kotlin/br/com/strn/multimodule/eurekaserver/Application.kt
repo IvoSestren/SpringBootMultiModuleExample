@@ -1,11 +1,11 @@
-package br.com.strn.multimodule.customers
+package br.com.strn.multimodule.eurekaserver
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer
 
 @SpringBootApplication
-@EnableEurekaClient
+@EnableEurekaServer
 class Application
 
 fun main(args: Array<String>) {

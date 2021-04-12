@@ -23,15 +23,16 @@ configurations {
 }
 
 subprojects {
-    apply{
+    apply {
         plugin("io.spring.dependency-management")
         plugin("org.springframework.boot")
         plugin("org.jetbrains.kotlin.plugin.spring")
         plugin("org.jetbrains.kotlin.jvm")
     }
 
+    extra["springCloudVersion"] = "2020.0.2"
+
     dependencies {
-        implementation("org.springframework.boot:spring-boot-starter-web")
         implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
         implementation("org.jetbrains.kotlin:kotlin-reflect")
         implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")

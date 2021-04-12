@@ -1,4 +1,4 @@
-package br.com.strn.multimodule.customers
+package br.com.strn.multimodule.gateway
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
